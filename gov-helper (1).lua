@@ -4549,12 +4549,24 @@ function imgui.ToggleButton(str_id, bool)
 end
 
 changelog = {
+	[6] = {
+		version = '1.5',
+		comment = '',
+		date = os.time({day = '07', month = '08', year = '2022'}),
+		log = {
+			"Исправил возможность менять цвет Департамента"
+		},
+		patches = {
+			show = true,
+			info = {}
+		}
+	},
 	[5] = {
 		version = '1.4',
 		comment = '',
 		date = os.time({day = '07', month = '08', year = '2022'}),
 		log = {
-			"Автообновление настроено",
+			"Автообновление настроено"
 		},
 		patches = {
 			show = true,
@@ -4566,7 +4578,7 @@ changelog = {
 		comment = '',
 		date = os.time({day = '07', month = '08', year = '2022'}),
 		log = {
-			"Добавлено автообновление",
+			"Добавлено автообновление"
 		},
 		patches = {
 			show = true,
@@ -4578,7 +4590,7 @@ changelog = {
 		comment = '',
 		date = os.time({day = '07', month = '08', year = '2022'}),
 		log = {
-			"Изменил иконки в разделе «Банковские Услуги»",
+			"Изменил иконки в разделе «Банковские Услуги»"
 		},
 		patches = {
 			show = true,
