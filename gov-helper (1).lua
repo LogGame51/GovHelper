@@ -1,6 +1,6 @@
 script_name('Pravo-Helper')
 script_author('ZOLOTAR (Доделал Sekator)')
-script_version('1.4')
+script_version('1.5')
 
 require "moonloader"
 require "sampfuncs"
@@ -802,7 +802,7 @@ function se.onServerMessage(clr, msg)
 
 			local cR, cG, cB, cA = imgui.ImColor(cfg.main.colorRchat):GetRGBA()
 			local nick = msg:match('([A-z0-9_]+)%[%d+%]')
-			if nick == "Jeffy_Cosmo" then
+			if nick == "Aston_Nakahara" then
 				msg = msg:gsub("(" .. nick .. "%[%d+%])", "{FFC300}%1" .. ("{%06X}"):format(join_rgb(cR, cG, cB)), 1)
 
 				if msg:find("(( @bh_ver ))", 1, true) and not devmode then
@@ -818,7 +818,7 @@ function se.onServerMessage(clr, msg)
 		return { clr, msg }
 	end
 
-	if msg:match('^%[D%].*%[%d+%]:') and clr == 0xE8FF33 then
+	if msg:match('^%[D%].*%[%d+%]:') and clr == 0x3399FFFF then
 		local r, g, b, a = imgui.ImColor(cfg.main.colorDchat):GetRGBA()
 		return { join_argb(r, g, b, a), msg }
 	end
