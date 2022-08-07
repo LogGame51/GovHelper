@@ -1,6 +1,6 @@
 script_name('Pravo-Helper')
 script_author('ZOLOTAR (Доделал Sekator)')
-script_version('1.3')
+script_version('1.4')
 
 require "moonloader"
 require "sampfuncs"
